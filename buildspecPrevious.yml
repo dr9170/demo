@@ -1,0 +1,19 @@
+version: 0.2
+
+env:
+  variables:
+    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
+
+phases:
+  install:
+    commands:
+      - echo Entered the install phase...
+      - apt-get update -y
+      - apt-get install -y nano
+    post_build:
+
+    commands:
+      - aws s3 sync --delete build/ s3://codepipeline-us-east-1-722052581556 --acl public-read
+
+    finally:
+      - echo This always runs even if the update or install command fails 

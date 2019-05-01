@@ -1,0 +1,15 @@
+INSTANCE,KEY,VALUE,KEY,VALUE,KEY,VALUE,KEY,VALUE,KEY,VALUE,KEY,VALUE
+i-04d1cc98c1f26b8bc, Name,ops-docker-ws,env,devops,accounting,infra,Accounting,DevOps
+i-0e4797fb852098d95, Name,ops-docker-win,env,devops,accounting,infra,Accounting,devops
+i-09f3fcb98eab75666, Name,ops-docker-ws-2,env,devops,accounting,infra,Accounting,DevOps
+i-0e145bfc597663f95, Name,rundeck - careful if you power this on,env,devops,accounting,infra,Accounting,devops
+i-096ad6837c2d95803, Name,ops-mailman,env,devops,accounting,infra
+i-0635b49a5061b6a4d, Name,ops-openvas,env,devops,accounting,infra
+i-0911afd1a9d55add0, Name,PRODDCAWSNA4A-V
+i-042a0d65c434504b4, Name,opsbleuAutoScalingGroup,aws,ops-bleu-cluster-AutoScalingGroup-H0ZLF5ACDVLF,aws,arn,aws,AutoScalingGroup,aws,ops-bleu-ECS,accounting,infra
+i-0986baa1a8343313e, Name,AndriyTestLinux,env,devops,andriytest,
+i-0eac205d1312bd80e, Name,ops-discourse,env,devops
+i-0f28f0762ec766133, Name,WindowsTestAndriy,WindowsAndriyTest,
+i-0f6bf6328c9f8550c, Name,Gateway
+i-09b3a5b7064178d43, Name,ops-pmp
+i-02c1dc2d53995a537, Name,PRODDCAWSNA4B-V,env,devops,accounting,infra

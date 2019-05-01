@@ -1,0 +1,16 @@
+{
+    "llave_privada":"c0nf3c@m@r@s2017",
+    "llave_publica":"d6cb90aaa161e97ae1e0339ead68ff14",
+    "llave_recaptcha": "6LcyUDwUAAAAAF-1D4bOplVCTKO1Q2k4j-GVj3sa",
+    "llave_recaptcha_publica": "6LfD3mUUAAAAAPhHDW-di74lgqTLCNLprDhwfWex",
+    "llave_google_analytics": "UA-129797594-2",
+    "usuariows": "df5fdd0a112df8833d0fe7972ba70c0f",
+    "tokenApi": "e646f8e41601d13922e849848dcc2b43",
+    "urlApp": "http://sii2des.confecamaras.co",
+    "pathRoute": "/controlador/Route.php",
+    "pathIndex": "/vista/plantilla/index.php",
+    "ApiSistemaorigen": "SII2",
+    "pathLogs": "C:/wamp64/www/sii/logs/",
+    "activaLogs": "SI",
+    "trazaLogs": "SI"
+}

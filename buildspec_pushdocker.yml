@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo -n "$CODEBUILD_BUILD_ID" | sed "s/.*:\([[:xdigit:]]\{7\}\).*/\1/" > /tmp/build_id.out
+      - printf "%s:%s" "$REPOSITORY_URI" "$(cat /tmp/build_id.out)" > /tmp/build_tag.out
+      - ##printf '{"tag":"%s"}' "$(cat /tmp/build_id.out)" > imagedefinitions.json
+      - printf '[{"name":"confeapp","imageUri":"%s"}]' "$(cat /tmp/build_tag.out)" > imagedefinitions.json
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker build -t 810157741463.dkr.ecr.us-east-1.amazonaws.com/php-mysql-confe:latest .
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push 810157741463.dkr.ecr.us-east-1.amazonaws.com/php-mysql-confe:latest
+artifacts:
+  files:
+    - imagedefinitions.json
+discard-paths: yes
