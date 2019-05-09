@@ -58,7 +58,7 @@
         <section class="text-center bg-white" style="padding-bottom:1rem !important;">
             <div class="container">
                 <img id="logoconfe" class="rounded mx-auto" src="../recursos/images/camaras/confecamaras.jpg" width="231" height="120">
-                <h1 class="jumbotron-heading">Orphan</h1>
+                <h1 class="jumbotron-heading">Changing</h1>
                 <p class="lead text-muted" id="instrucciones1">Seleccione la Cámara a la cual desea Acceder.</p>
             </div>
         </section>
